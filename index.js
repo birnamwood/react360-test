@@ -12,7 +12,7 @@ export default class react360_test extends React.Component {
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
-            Welcome to React 360
+            Welcome to React 360 ＼(^o^)／
           </Text>
         </View>
       </View>

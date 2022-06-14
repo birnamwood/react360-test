@@ -2,9 +2,11 @@
   "name": "react360_test",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://birnamwood.github.io/react360-test/",
   "scripts": {
     "start": "node node_modules/react-360/scripts/packager.js",
-    "bundle": "node node_modules/react-360/scripts/bundle.js",
+    "bundle": "node node_modules/react-360/scripts/bundle.js && sh copy_assets.sh",
+    "deploy": "gh-pages -d build",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest"
@@ -19,6 +21,7 @@
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
+    "gh-pages": "^4.0.0",
     "jest": "^19.0.2",
     "react-devtools": "^2.5.2",
     "react-test-renderer": "16.0.0",
